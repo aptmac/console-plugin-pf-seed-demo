@@ -10,7 +10,7 @@ import {
 } from '@patternfly/react-core';
 import { useHistory } from 'react-router-dom';
 
-const NotFound: React.FunctionComponent = () => {
+export default function NotFound() {
   function GoHomeBtn() {
     const history = useHistory();
     function handleClick() {
@@ -35,6 +35,6 @@ const NotFound: React.FunctionComponent = () => {
     </EmptyState>
   </PageSection>
   )
-};
+}
 
-export { NotFound };
+// export { NotFound };

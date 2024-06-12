@@ -1,16 +1,18 @@
 import * as React from 'react';
-import { NavLink, useLocation, useHistory } from 'react-router-dom';
+import {
+  // NavLink, useLocation,
+  useHistory } from 'react-router-dom';
 import {
   Nav,
   NavList,
-  NavItem,
-  NavExpandable,
+  // NavItem,
+  // NavExpandable,
   Page,
   PageHeader,
   PageSidebar,
   SkipToContent
 } from '@patternfly/react-core';
-import { routes, IAppRoute, IAppRouteGroup, AppRouteConfig } from '../routes';
+// import { routes, IAppRoute, IAppRouteGroup, AppRouteConfig } from '../routes';
 import logo from '@app/bgimages/Patternfly-Logo.svg';
 
 interface IAppLayout {
@@ -50,33 +52,33 @@ const AppLayout: React.FunctionComponent<IAppLayout> = ({ children }) => {
     />
   );
 
-  const location = useLocation();
+  // const location = useLocation();
 
-  const renderNavItem = (route: IAppRoute | AppRouteConfig, index: number) => (
-    <NavItem key={`${route.label}-${index}`} id={`${route.label}-${index}`} isActive={route.path === location.pathname}>
-      <NavLink exact={route.exact} to={route.path}>
-        {route.label}
-      </NavLink>
-    </NavItem>
-  );
+  // const renderNavItem = (route: IAppRoute | AppRouteConfig, index: number) => (
+  //   <NavItem key={`${route.label}-${index}`} id={`${route.label}-${index}`} isActive={route.path === location.pathname}>
+  //     <NavLink exact={route.exact} to={route.path}>
+  //       {route.label}
+  //     </NavLink>
+  //   </NavItem>
+  // );
 
-  const renderNavGroup = (group: IAppRouteGroup, groupIndex: number) => (
-    <NavExpandable
-      key={`${group.label}-${groupIndex}`}
-      id={`${group.label}-${groupIndex}`}
-      title={group.label}
-      isActive={group.routes.some((route) => route.path === location.pathname)}
-    >
-      {group.routes.map((route, idx) => route.label && renderNavItem(route, idx))}
-    </NavExpandable>
-  );
+  // const renderNavGroup = (group: IAppRouteGroup, groupIndex: number) => (
+  //   <NavExpandable
+  //     key={`${group.label}-${groupIndex}`}
+  //     id={`${group.label}-${groupIndex}`}
+  //     title={group.label}
+  //     isActive={group.routes.some((route) => route.path === location.pathname)}
+  //   >
+  //     {group.routes.map((route, idx) => route.label && renderNavItem(route, idx))}
+  //   </NavExpandable>
+  // );
 
   const Navigation = (
     <Nav id="nav-primary-simple" theme="dark">
       <NavList id="nav-list-simple">
-        {routes.map(
+        {/* {routes.map(
           (route, idx) => route.label && (!route.routes ? renderNavItem(route, idx) : renderNavGroup(route, idx))
-        )}
+        )} */}
       </NavList>
     </Nav>
   );

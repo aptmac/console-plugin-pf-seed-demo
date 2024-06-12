@@ -44,7 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "@typescript-eslint/parser": "^4.26.1",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
-    "copy-webpack-plugin": "^10.2.4",
+    "copy-webpack-plugin": "^6.4.1",
     "css-loader": "^5.2.6",
     "css-minimizer-webpack-plugin": "^3.4.1",
     "dotenv-webpack": "^7.1.0",
@@ -100,7 +100,9 @@
     "description": "Template project for OpenShift Console plugins. Edit package.json to change this message and the plugin name.",
     "exposedModules": {
       "DashboardPage": "./app/Dashboard/Dashboard",
-      "NotFoundPage": "./app/NotFound/NotFound"
+      "NotFoundPage": "./app/NotFound/NotFound",
+      "GeneralSettingsPage": "./app/Settings/General/GeneralSettings",
+      "ProfileSettingsPage": "./app/Settings/Profile/ProfileSettings"
     },
     "dependencies": {
       "@console/pluginAPI": "*"

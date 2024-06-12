@@ -11,8 +11,24 @@
       "type": "console.page/route",
       "properties": {
         "exact": true,
-        "path": "/notfound",
+        "path": "/not-found",
         "component": { "$codeRef": "NotFoundPage" }
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": "/general-settings",
+        "component": { "$codeRef": "GeneralSettingsPage" }
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": "/profile-settings",
+        "component": { "$codeRef": "ProfileSettingsPage" }
       }
     }
   ]

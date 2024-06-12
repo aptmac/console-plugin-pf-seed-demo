@@ -5,7 +5,7 @@ import { Configuration as WebpackConfiguration } from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 import { ConsoleRemotePlugin } from '@openshift-console/dynamic-plugin-sdk-webpack';
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -75,9 +75,9 @@ const config: Configuration = {
   },
   plugins: [
     new ConsoleRemotePlugin(),
-    new CopyWebpackPlugin({
-      patterns: [{ from: path.resolve(__dirname, 'locales'), to: 'locales' }],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [{ from: path.resolve(__dirname, 'locales'), to: 'locales' }],
+    // }),
   ],
   devtool: isProd ? false : 'source-map',
   optimization: {

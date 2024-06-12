@@ -1,6 +1,10 @@
-import React from "react";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from '@app/index';
+
+import * as React from "react";
 import ReactDOM from "react-dom";
-import App from '@app/index';
+import App from "./app";
 
 if (process.env.NODE_ENV !== "production") {
   const config = {

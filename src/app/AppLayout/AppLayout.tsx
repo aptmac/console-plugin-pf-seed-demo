@@ -10,7 +10,7 @@ import {
   PageSidebar,
   SkipToContent
 } from '@patternfly/react-core';
-import { routes, IAppRoute, IAppRouteGroup } from '@app/routes';
+import { routes, IAppRoute, IAppRouteGroup, AppRouteConfig } from '../routes';
 import logo from '@app/bgimages/Patternfly-Logo.svg';
 
 interface IAppLayout {
@@ -52,7 +52,7 @@ const AppLayout: React.FunctionComponent<IAppLayout> = ({ children }) => {
 
   const location = useLocation();
 
-  const renderNavItem = (route: IAppRoute, index: number) => (
+  const renderNavItem = (route: IAppRoute | AppRouteConfig, index: number) => (
     <NavItem key={`${route.label}-${index}`} id={`${route.label}-${index}`} isActive={route.path === location.pathname}>
       <NavLink exact={route.exact} to={route.path}>
         {route.label}

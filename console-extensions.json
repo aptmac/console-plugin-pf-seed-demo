@@ -1,0 +1,19 @@
+[
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": "/dashboard",
+        "component": { "$codeRef": "DashboardPage" }
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": "/notfound",
+        "component": { "$codeRef": "NotFoundPage" }
+      }
+    }
+  ]
+  

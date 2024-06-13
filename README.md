@@ -38,3 +38,7 @@ npm run build
 # Run the "production" server at localhost:8080
 npm run start
 ```
+## Screenshot
+![screenshot](https://github.com/aptmac/console-plugin-pf-seed-demo/assets/10425301/42e46134-80b3-40a0-ae33-905ed68c1f57)
+
+Regular React application on the left, OpenShift Console on the right

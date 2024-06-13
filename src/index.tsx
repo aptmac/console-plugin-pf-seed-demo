@@ -1,8 +1,4 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import App from '@app/index';
-
-import * as React from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import App from "./app";
 

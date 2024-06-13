@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, react/display-name
 export default () => (
   <svg
     style={{ verticalAlign: '-0.125em' }}

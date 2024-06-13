@@ -105,7 +105,8 @@
       "DashboardPage": "./app/Dashboard/Dashboard",
       "NotFoundPage": "./app/NotFound/NotFound",
       "GeneralSettingsPage": "./app/Settings/General/GeneralSettings",
-      "ProfileSettingsPage": "./app/Settings/Profile/ProfileSettings"
+      "ProfileSettingsPage": "./app/Settings/Profile/ProfileSettings",
+      "perspective": "./app/utils/perspective"
     },
     "dependencies": {
       "@console/pluginAPI": "*"

@@ -87,6 +87,63 @@
         "perspective": "admin",
         "section": "pf-section"
       }
+    },
+    {
+      "type": "console.perspective",
+      "properties": {
+        "id": "pf-perspective",
+        "name": "Patternfly React Seed Demo",
+        "icon": { "$codeRef": "perspective.icon" },
+        "landingPageURL": { "$codeRef": "perspective.getLandingPageURL" },
+        "importRedirectURL": { "$codeRef": "perspective.getImportRedirectURL" }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "pf-dashboard",
+        "perspective": "pf-perspective",
+        "name": "Dashboard",
+        "href": "/dashboard"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "pf-not-found",
+        "perspective": "pf-perspective",
+        "name": "Not Found",
+        "href": "/not-found"
+      }
+    },
+    {
+      "type": "console.navigation/section",
+      "properties": {
+        "id": "pf-settings-section",
+        "perspective": "pf-perspective",
+        "name": "Settings",
+        "insertAfter": "pf-not-found"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "pf-general-settings",
+        "name": "General Settings",
+        "href": "/general-settings",
+        "perspective": "pf-perspective",
+        "section": "pf-settings-section"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "pf-profile-settings",
+        "name": "Profile Settings",
+        "href": "/profile-settings",
+        "perspective": "pf-perspective",
+        "section": "pf-settings-section"
+      }
     }
   ]
   

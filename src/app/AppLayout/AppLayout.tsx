@@ -13,7 +13,7 @@ import {
   SkipToContent
 } from '@patternfly/react-core';
 // import { routes, IAppRoute, IAppRouteGroup, AppRouteConfig } from '../routes';
-import logo from '@app/bgimages/Patternfly-Logo.svg';
+// import logo from '@app/bgimages/Patternfly-Logo.svg';
 
 interface IAppLayout {
   children: React.ReactNode;
@@ -39,7 +39,7 @@ const AppLayout: React.FunctionComponent<IAppLayout> = ({ children }) => {
       history.push('/');
     }
     return (
-      <img src={logo} onClick={handleClick} alt="PatternFly Logo" />
+      <img onClick={handleClick} alt="PatternFly Logo" />
     );
   }
 

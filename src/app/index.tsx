@@ -3,7 +3,7 @@ import '@patternfly/react-core/dist/styles/base.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AppLayout } from './AppLayout/AppLayout';
 import { AppRoutes } from './routes';
-// import '@app/app.css';
+import './app.css';
 
 const App: React.FunctionComponent = () => (
   <Router>

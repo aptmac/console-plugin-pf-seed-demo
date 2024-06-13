@@ -106,6 +106,7 @@
       "NotFoundPage": "./app/NotFound/NotFound",
       "GeneralSettingsPage": "./app/Settings/General/GeneralSettings",
       "ProfileSettingsPage": "./app/Settings/Profile/ProfileSettings",
+      "SupportPage": "./app/Support/Support",
       "perspective": "./app/utils/perspective"
     },
     "dependencies": {

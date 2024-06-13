@@ -19,6 +19,14 @@
       "type": "console.page/route",
       "properties": {
         "exact": true,
+        "path": "/support",
+        "component": { "$codeRef": "SupportPage" }
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
         "path": "/general-settings",
         "component": { "$codeRef": "GeneralSettingsPage" }
       }
@@ -46,6 +54,16 @@
         "id": "dashboard",
         "name": "Dashboard",
         "href": "/dashboard",
+        "perspective": "admin",
+        "section": "pf-section"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "support",
+        "name": "Support",
+        "href": "/support",
         "perspective": "admin",
         "section": "pf-section"
       }
@@ -105,6 +123,15 @@
         "perspective": "pf-perspective",
         "name": "Dashboard",
         "href": "/dashboard"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "pf-support",
+        "perspective": "pf-perspective",
+        "name": "Support",
+        "href": "/support"
       }
     },
     {
